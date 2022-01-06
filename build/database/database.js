@@ -16,8 +16,8 @@ exports.db = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 class DataBase {
     constructor() {
-        this._cadenaConexion = 'mongodb://localhost/formulaOne';
-        this._cadenaConexion2 = `mongodb+srv://empresa:0000@cluster0.oxux9.mongodb.net/formulaOne?retryWrites=true&w=majority`;
+        this._cadenaConexion2 = 'mongodb://localhost/formulaOne';
+        this._cadenaConexion = `mongodb+srv://empresa:0000@cluster0.oxux9.mongodb.net/formulaOne?retryWrites=true&w=majority`;
         this.conectarBD = () => __awaiter(this, void 0, void 0, function* () {
             const promise = new Promise((resolve, reject) => __awaiter(this, void 0, void 0, function* () {
                 yield mongoose_1.default.connect(this._cadenaConexion, {})

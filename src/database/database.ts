@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 
 class DataBase {
 
-    public _cadenaConexion: string = 'mongodb://localhost/formulaOne';
-    public _cadenaConexion2:string= `mongodb+srv://empresa:0000@cluster0.oxux9.mongodb.net/formulaOne?retryWrites=true&w=majority`
+    public _cadenaConexion2: string = 'mongodb://localhost/formulaOne';
+    public _cadenaConexion:string= `mongodb+srv://empresa:0000@cluster0.oxux9.mongodb.net/formulaOne?retryWrites=true&w=majority`
     constructor(){
 
     }
